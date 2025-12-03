@@ -114,7 +114,7 @@ deno cache --reload main.ts dev.ts
 - [Tailwind CSS v4.0 Release](https://tailwindcss.com/blog/tailwindcss-v4)
 - [Deno 2.5.6 Release](https://github.com/denoland/deno/releases/tag/v2.5.6)
 
-## Fresh Package Versions (Current as of December 2025)
+## Fresh Package Versions (Latest Stable)
 
 This project uses the following Fresh packages at their latest stable versions:
 
