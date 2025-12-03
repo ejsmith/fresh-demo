@@ -1,5 +1,19 @@
 # Upgrade Notes: Fresh 2.0.0-alpha.34 → 2.2.0
 
+## ⚡ Quick Update
+
+For future updates, Fresh provides an automatic update tool:
+
+```bash
+# Easiest way to update Fresh and dependencies
+deno task update
+
+# Or directly:
+deno run -Ar jsr:@fresh/update .
+```
+
+This PR documents a manual update process for transparency and includes detailed notes about breaking changes.
+
 ## Summary
 
 This project has been updated from Fresh 2.0.0-alpha.34 (pre-release) to Fresh 2.2.0 (stable release) and all dependencies have been updated to their latest versions.
@@ -84,7 +98,23 @@ After the dependencies are installed, verify the following:
 
 ## Installation Instructions
 
-To install the updated dependencies:
+### Method 1: Using Fresh Update Tool (Recommended)
+
+Fresh provides a built-in update tool that can automatically update dependencies:
+
+```bash
+# Use the built-in update task
+deno task update
+
+# Or run directly
+deno run -Ar jsr:@fresh/update .
+```
+
+This will automatically update your `deno.json` and `deno.lock` to the latest compatible versions.
+
+### Method 2: Manual Installation
+
+To manually install the updated dependencies:
 
 ```bash
 # Clear any cached dependencies
@@ -96,6 +126,8 @@ deno cache --reload main.ts dev.ts
 # Or simply run the dev server (will auto-download)
 deno task dev
 ```
+
+**Note**: This PR was created manually to document the specific version changes being made. For future updates, you can simply use `deno task update` to automatically update to the latest versions.
 
 ## Rollback Instructions
 
