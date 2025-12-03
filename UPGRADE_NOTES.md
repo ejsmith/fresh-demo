@@ -114,6 +114,23 @@ deno cache --reload main.ts dev.ts
 - [Tailwind CSS v4.0 Release](https://tailwindcss.com/blog/tailwindcss-v4)
 - [Deno 2.5.6 Release](https://github.com/denoland/deno/releases/tag/v2.5.6)
 
+## Fresh Package Versions (Current as of December 2025)
+
+This project uses the following Fresh packages at their latest stable versions:
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| @fresh/core | v2.2.0 | Core Fresh framework (used) |
+| @fresh/plugin-tailwind | v1.0.0 | Tailwind CSS 4.x plugin (used) |
+| @fresh/plugin-tailwind-v3 | v1.0.1 | Tailwind CSS 3.x plugin (alternative) |
+| @fresh/plugin-vite | v1.0.8 | Vite plugin for Fresh (alternative build system) |
+| @fresh/build-id | v1.0.1 | Build ID utilities |
+| @fresh/update | v2.2.0 | Fresh update tool |
+| @fresh/init | v2.3.0 | Fresh project scaffolder |
+| @fresh/examples | v1.0.1 | Example projects |
+
+**Note**: This project uses the traditional Fresh build system with the Builder pattern. For new projects, you may also consider using `@fresh/plugin-vite` for Vite-powered builds with HMR support.
+
 ## Compatibility Notes
 
 ### Project Structure Compatibility
