@@ -11,7 +11,7 @@ This project has been updated from Fresh 2.0.0-alpha.34 (pre-release) to Fresh 2
 | Package | Previous Version | New Version | Type |
 |---------|-----------------|-------------|------|
 | @fresh/core | ^2.0.0-alpha.34 | ^2.2.0 | Major (alpha → stable) |
-| @fresh/plugin-tailwind | ^0.0.1-alpha.7 | >=0.0.1-alpha.7 | Minor (alpha, updated constraint) |
+| @fresh/plugin-tailwind | ^0.0.1-alpha.7 | ^1.0.0 | Major (alpha → stable 1.0) |
 | preact | ^10.26.6 | ^10.27.0 | Patch |
 | @preact/signals | ^2.0.4 | ^2.2.1 | Minor |
 | tailwindcss | ^3.4.3 | ^4.1.10 | Major |
