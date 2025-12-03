@@ -1,5 +1,7 @@
 import { define } from "../../utils.ts";
 
+const kv = await Deno.openKv();
+
 export const handler = define.handlers({
   GET(ctx) {
     const name = ctx.params.name;

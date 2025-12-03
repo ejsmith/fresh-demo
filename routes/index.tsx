@@ -1,12 +1,18 @@
 import { useSignal } from "@preact/signals";
+import { Head } from "fresh/runtime";
 import { define } from "../utils.ts";
 import Counter from "../islands/Counter.tsx";
 
-export default define.page(function Home() {
+export default define.page(function Home(ctx) {
   const count = useSignal(3);
 
+  console.log("Shared value " + ctx.state.shared);
+
   return (
-    <div class="px-4 py-8 mx-auto fresh-gradient">
+    <div class="px-4 py-8 mx-auto fresh-gradient min-h-screen">
+      <Head>
+        <title>Fresh counter</title>
+      </Head>
       <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
         <img
           class="my-6"
@@ -21,6 +27,12 @@ export default define.page(function Home() {
           <code class="mx-2">./routes/index.tsx</code> file, and refresh.
         </p>
         <Counter count={count} />
+        <a
+          href="/pong"
+          class="mt-6 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg transition-colors shadow-lg"
+        >
+          🏓 Play Pong
+        </a>
       </div>
     </div>
   );
